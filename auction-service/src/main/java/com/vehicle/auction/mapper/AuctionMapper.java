@@ -1,4 +1,4 @@
-package com.vehicle.auction.mapper;
+package main.java.com.vehicle.auction.mapper;
 
 import com.vehicle.auction.dto.AuctionRequestDto;
 import com.vehicle.auction.dto.AuctionResponseDto;

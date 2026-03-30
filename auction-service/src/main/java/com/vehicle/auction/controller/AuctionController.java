@@ -1,4 +1,4 @@
-package com.vehicle.auction.controller;
+package main.java.com.vehicle.auction.controller;
 
 import com.vehicle.auction.dto.AuctionRequestDto;
 import com.vehicle.auction.dto.AuctionResponseDto;
