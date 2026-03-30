@@ -1,12 +1,12 @@
 package com.vehicleauctionsystem.bidding_service.entity;
 
-import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "bids")
+@Document(collection = "bids")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -14,21 +14,11 @@ import java.time.LocalDateTime;
 public class Bid {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
 
-    @Column(nullable = false)
     private Long userId;
-
-    @Column(nullable = false)
     private Long vehicleId;
-
-    @Column(nullable = false)
     private Double bidAmount;
-
-    @Column(nullable = false)
     private LocalDateTime bidTime;
-
-    @Column(nullable = false)
     private String status;
 }

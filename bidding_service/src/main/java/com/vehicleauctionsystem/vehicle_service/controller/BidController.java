@@ -39,17 +39,17 @@ public class BidController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<BidDto> getBidById(@PathVariable Long id) {
+    public ResponseEntity<BidDto> getBidById(@PathVariable String id) {
         return ResponseEntity.ok(bidService.getBidById(id));
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<BidDto> updateBid(@PathVariable Long id, @RequestBody BidDto bidDto) {
+    public ResponseEntity<BidDto> updateBid(@PathVariable String id, @RequestBody BidDto bidDto) {
         return ResponseEntity.ok(bidService.updateBid(id, bidDto));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteBid(@PathVariable Long id) {
+    public ResponseEntity<String> deleteBid(@PathVariable String id) {
         bidService.deleteBid(id);
         return ResponseEntity.ok("Bid deleted successfully!");
     }
