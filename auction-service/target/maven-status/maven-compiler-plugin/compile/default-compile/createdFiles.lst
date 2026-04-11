@@ -1,0 +1,16 @@
+com\vehicle\auction\exception\ResourceNotFoundException.class
+com\vehicle\auction\exception\GlobalExceptionHandler.class
+com\vehicle\auction\service\AuctionService.class
+com\vehicle\auction\dto\AuctionResponseDto.class
+com\vehicle\auction\dto\AuctionResponseDto$AuctionResponseDtoBuilder.class
+com\vehicle\auction\service\impl\AuctionServiceImpl.class
+com\vehicle\auction\controller\AuctionController.class
+com\vehicle\auction\entity\Auction.class
+com\vehicle\auction\entity\AuctionStatus.class
+com\vehicle\auction\AuctionServiceApplication.class
+com\vehicle\auction\mapper\AuctionMapper.class
+com\vehicle\auction\repository\AuctionRepository.class
+com\vehicle\auction\dto\AuctionRequestDto$AuctionRequestDtoBuilder.class
+com\vehicle\auction\config\SwaggerConfig.class
+com\vehicle\auction\entity\Auction$AuctionBuilder.class
+com\vehicle\auction\dto\AuctionRequestDto.class
