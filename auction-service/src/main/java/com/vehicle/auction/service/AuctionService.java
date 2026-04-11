@@ -17,4 +17,6 @@ public interface AuctionService {
     AuctionResponseDto endAuction(Long id);
 
     List<AuctionResponseDto> getActiveAuctions();
+
+    void deleteAuction(Long id);
 }

@@ -92,4 +92,12 @@ public class AuctionServiceImpl implements AuctionService {
                 .map(auctionMapper::toDto)
                 .collect(Collectors.toList());
     }
+
+    @Override
+    @Transactional
+    public void deleteAuction(Long id) {
+        Auction auction = auctionRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Auction not found with id: " + id));
+        auctionRepository.delete(auction);
+    }
 }

@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin//(origins = "http://localhost:3000")
-@RequestMapping(value = "api/v1/")
+@CrossOrigin(origins = "*")
+@RequestMapping(value = "/api/v1")
 public class UserController {
     @Autowired
     private UserService userService;
